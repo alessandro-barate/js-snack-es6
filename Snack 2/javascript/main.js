@@ -4,37 +4,37 @@ const teams = [
   {
     nome: "Inter",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
   {
     nome: "Atalanta",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
   {
     nome: "Fiorentina",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
   {
     nome: "Bologna",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
   {
     nome: "Roma",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
   {
     nome: "Juventus",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
   {
     nome: "Milan",
     puntiFatti: "",
-    puntiSubiti: "",
+    falliSubiti: "",
   },
 ];
 
@@ -44,3 +44,11 @@ const puntiFatti = Math.floor(Math.random() * 100);
 const falliSubiti = Math.floor(Math.random() * 50);
 console.log(puntiFatti);
 console.log(falliSubiti);
+
+for (let i = 0; i < teams.length; i++) {
+  let teamsPunti = teams[i];
+  teamsPunti.puntiFatti = puntiFatti;
+  let teamsFalli = teams[i];
+  teamsFalli.falliSubiti = falliSubiti;
+  console.log(teamsFalli);
+}

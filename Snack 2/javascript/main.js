@@ -39,3 +39,8 @@ const teams = [
 ];
 
 console.log(teams);
+
+const puntiFatti = Math.floor(Math.random() * 100);
+const falliSubiti = Math.floor(Math.random() * 50);
+console.log(puntiFatti);
+console.log(falliSubiti);

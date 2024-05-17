@@ -40,15 +40,17 @@ const teams = [
 
 console.log(teams);
 
-const puntiFatti = Math.floor(Math.random() * 100);
-const falliSubiti = Math.floor(Math.random() * 50);
-console.log(puntiFatti);
-console.log(falliSubiti);
+const teamsNew = teams.map((element, index, attay) => {
+  return {
+    nome: element.nome,
+    puntiFatti: 1,
+    falliSubiti: 2,
+  };
+});
 
-for (let i = 0; i < teams.length; i++) {
-  let teamsPunti = teams[i];
-  teamsPunti.puntiFatti = puntiFatti;
-  let teamsFalli = teams[i];
-  teamsFalli.falliSubiti = falliSubiti;
-  console.log(teamsFalli);
-}
+console.log(teamsNew);
+
+const result = teamsNew.map;
+
+const puntiFatti = Math.floor(Math.random() * 100) + 1;
+const falliSubiti = Math.floor(Math.random() * 50);

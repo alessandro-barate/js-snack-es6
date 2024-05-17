@@ -61,8 +61,6 @@ let biciLeggera = bikes[0];
   } Non funziona nel caso ci sia un peso minore dopo il peso più leggero
 } */
 
-console.log(biciLeggera.nome);
-
 console.log("--------------------");
 
 // for..of
